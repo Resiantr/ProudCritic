@@ -1,0 +1,7 @@
+    @classmethod
+    def from_string(cls, date_as_string):
+        day, month, year = map(int, date_as_string.split('-'))
+        date1 = cls(day, month, year)
+        return date1
+
+date2 = Date.from_string('11-09-2012')
